@@ -56,5 +56,5 @@
 </style>
 
 <div class='rewards' on:click={claim} use:tooltip={{content: 'Claim Rewards'}}>
-	{@html GIFT_ICON} {#if isLoading}Claiming…{:else}{formatForDisplay($reward)} ARB{/if}
+	{@html GIFT_ICON} {#if isLoading}Claiming…{:else}{formatForDisplay($reward)} ZARe{/if}
 </div>

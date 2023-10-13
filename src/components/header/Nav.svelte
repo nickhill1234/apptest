@@ -120,8 +120,7 @@
 <div class='nav'>
 	<a class:active={$pageName == 'Trade'} href='/trade'>Trade</a>
 	<a class:active={$pageName == 'Pool'} href='/pool'>Pool</a>
-	<a class:active={$pageName == 'Stake'} href='/stake'>Stake</a>
-	<a on:click|stopPropagation={toggleMobileNav} class:active={$showMobileNav}>…</a>
+	<a class:active={$pageName == 'Leaderboard'} href='/leaderboard'>Leaderboard</a>
 </div>
 
 {#if $showMobileNav}
@@ -131,8 +130,6 @@
 	<a on:click={toggleMobileNav} href='/leaderboard' class='display-desktop'>Leaderboard</a>
 	<a on:click={toggleMobileNav} href='/trade'>Trade</a>
 	<a on:click={toggleMobileNav} href='/pool'>Pool</a>
-	<a on:click={toggleMobileNav} href='/stake'>Stake</a>
-	<a on:click={toggleMobileNav} href='https://docs.cap.io' target='_blank' class='display-desktop'>Docs</a>
 </div>
 {/if}
 
